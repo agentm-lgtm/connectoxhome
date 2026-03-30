@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Bus Rentals - ConnectoxHome Premium Transportation Services</title>
+    <meta name="description" content="Professional party bus rental services for your special events. Book your celebration transportation today with our experienced team. Click here to continue exploring our services.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .navBar_kx7m {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navContainer_kx7m {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            flex-wrap: wrap;
+        }
+
+        .navLogo_kx7m {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navMenu_kx7m {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .navMenu_kx7m a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            font-size: 14px;
+        }
+
+        .navMenu_kx7m a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        .heroSection_qp9n {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .heroSection_qp9n::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+
+        .heroContent_qp9n {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .heroContent_qp9n h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .heroContent_qp9n p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .ctaButton_qp9n {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .ctaButton_qp9n:hover {
+            background-color: #ff5252;
+            transform: translateY(-2px);
+        }
+
+        .container_main_kx7m {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sectionBlock_mx3k {
+            background: white;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .sectionBlock_mx3k h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .sectionBlock_mx3k h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .sectionBlock_mx3k p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .imageBlock_kx7m {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .imageBlock_kx7m img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewCard_qp9n {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .reviewCard_qp9n strong {
+            color: #667eea;
+        }
+
+        .reviewCard_qp9n .stars_kx7m {
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+
+        .gridLayout_mx3k {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .gridCard_kx7m {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gridCard_kx7m:hover {
+            transform: translateY(-5px);
+        }
+
+        .gridCard_kx7m h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer_qp9n {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        .footerContent_kx7m {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footerSection_mx3k h4 {
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .footerSection_mx3k p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .footerSection_mx3k a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footerSection_mx3k a:hover {
+            color: #ff6b6b;
+        }
+
+        .phoneLink_kx7m {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .phoneLink_kx7m:hover {
+            color: #ff6b6b;
+        }
+
+        .modal_kx7m {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            overflow-y: auto;
+        }
+
+        .modalContent_kx7m {
+            background-color: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .closeButton_kx7m {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .closeButton_kx7m:hover {
+            color: #000;
+        }
+
+        .modalContent_kx7m h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+
+        .modalContent_kx7m h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .modalContent_kx7m p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .historyTimeline_mx3k {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timelineItem_kx7m {
+            margin-bottom: 30px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .timelineItem_kx7m::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+
+        .timelineItem_kx7m strong {
+            color: #667eea;
+            font-size: 16px;
+        }
+
+        .featureList_qp9n {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .featureList_qp9n li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .featureList_qp9n li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .highlightBox_mx3k {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+
+        .ctaLink_qp9n {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .ctaLink_qp9n:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .navMenu_kx7m {
+                gap: 0;
+            }
+
+            .navMenu_kx7m a {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .heroContent_qp9n h1 {
+                font-size: 32px;
+            }
+
+            .sectionBlock_mx3k {
+                padding: 20px;
+            }
+
+            .sectionBlock_mx3k h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navBar_kx7m">
+        <div class="navContainer_kx7m">
+            <a href="#home" class="navLogo_kx7m">🚌 ConnectoxHome Party Bus</a>
+            <ul class="navMenu_kx7m">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#fleet">Fleet</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" onclick="openModal('privacyModal_kx7m')">Privacy</a></li>
+                <li><a href="#" onclick="openModal('termsModal_kx7m')">Terms</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="heroSection_qp9n" id="home">
+        <div class="heroContent_qp9n">
+            <h1>Celebrate in Style with ConnectoxHome Party Bus Rentals</h1>
+            <p>Your ultimate destination for unforgettable group transportation experiences. From birthdays to corporate events, we deliver exceptional service every time. <a href="#services" class="ctaLink_qp9n">Click here to continue</a> exploring our comprehensive offerings.</p>
+            <button class="ctaButton_qp9n" onclick="document.getElementById('bookingSection_mx3k').scrollIntoView({behavior: 'smooth'})">Book Your Event Today</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container_main_kx7m">
+        <!-- Services Section -->
+        <section class="sectionBlock_mx3k" id="services">
+            <h2>Our Transportation Services</h2>
+            <p>At ConnectoxHome, we specialize in providing comprehensive party bus rental solutions tailored to meet the unique needs of every celebration. Our fleet is meticulously maintained and staffed with professional drivers who understand the importance of punctuality and customer satisfaction. Whether you're planning an intimate gathering or a large-scale corporate event, we have the perfect vehicle and service package for you.</p>
+            
+            <h3>Birthday Celebrations</h3>
+            <p>Make your birthday unforgettable with our specialized birthday party bus services. Our vehicles feature state-of-the-art sound systems, LED lighting, and comfortable seating arrangements that create the perfect atmosphere for celebration. We accommodate groups of all sizes and can customize the experience based on your preferences. Our professional staff ensures that your special day is executed flawlessly from start to finish.</p>
+
+            <h3>Wedding Transportation</h3>
+            <p>Your wedding day deserves exceptional transportation solutions. We provide elegant and reliable party bus services for wedding parties, ensuring that your guests arrive in comfort and style. Our drivers are experienced in handling wedding day logistics and understand the importance of timing and coordination. We work seamlessly with wedding planners and venues to ensure a smooth experience.</p>
+
+            <h3>Corporate Events & Team Building</h3>
+            <p>Strengthen team bonds with our corporate transportation services. Perfect for company outings, team building activities, and corporate celebrations, our buses provide a professional yet fun environment for your employees. We offer flexible scheduling and can accommodate large groups with multiple vehicles if needed.</p>
+
+            <div class="imageBlock_kx7m">
+                <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Party Bus Interior with LED Lighting">
+            </div>
+
+            <h3>Bachelor and Bachelorette Parties</h3>
+            <p>Create memories that last a lifetime with our specialized bachelor and bachelorette party transportation. Our vehicles are equipped with everything needed for an exciting night out, including premium sound systems, comfortable seating, and climate control. Our experienced drivers know the best routes and can help coordinate stops at your favorite venues.</p>
+
+            <h3>Prom and School Events</h3>
+            <p>Make prom night special with safe, reliable transportation for you and your friends. Our party buses are perfect for school dances, graduation celebrations, and other student events. We prioritize safety while ensuring that students have an amazing experience.</p>
+
+            <div class="highlightBox_mx3k">
+                <strong>Special Offer:</strong> Book your event this month and receive complimentary amenity upgrades. <a href="#booking" class="ctaLink_qp9n">Click here to continue</a> with your reservation.
+            </div>
+        </section>
+
+        <!-- Fleet Section -->
+        <section class="sectionBlock_mx3k" id="fleet">
+            <h2>Our Modern Fleet</h2>
+            <p>ConnectoxHome maintains a diverse fleet of well-maintained vehicles designed to accommodate various group sizes and event types. Each vehicle in our fleet undergoes rigorous safety inspections and regular maintenance to ensure optimal performance and passenger comfort.</p>
+
+            <div class="gridLayout_mx3k">
+                <div class="gridCard_kx7m">
+                    <h4>Standard Party Bus</h4>
+                    <p>Accommodates 14-20 passengers with premium sound system, LED lighting, and comfortable seating. Perfect for smaller groups and intimate celebrations.</p>
+                </div>
+                <div class="gridCard_kx7m">
+                    <h4>Executive Party Bus</h4>
+                    <p>Seats 20-30 guests with enhanced amenities including premium bar setup, advanced lighting systems, and VIP seating arrangements.</p>
+                </div>
+                <div class="gridCard_kx7m">
+                    <h4>Mega Party Bus</h4>
+                    <p>Our largest option accommodating 30-40 passengers with dual sound zones, dance floor, and comprehensive entertainment features.</p>
+                </div>
+                <div class="gridCard_kx7m">
+                    <h4>Limousine Coach</h4>
+                    <p>Elegant transportation for 15-25 passengers featuring sophisticated interior design, perfect for formal events and upscale celebrations.</p>
+                </div>
+            </div>
+
+            <h3>Fleet Features & Amenities</h3>
+            <ul class="featureList_qp9n">
+                <li>State-of-the-art sound and entertainment systems</li>
+                <li>Professional-grade LED and ambient lighting</li>
+                <li>Climate-controlled interiors</li>
+                <li>Comfortable seating with premium upholstery</li>
+                <li>Safety equipment and emergency protocols</li>
+                <li>Wheelchair accessible options available</li>
+                <li>USB charging stations throughout</li>
+                <li>Professional uniformed drivers</li>
+            </ul>
+
+            <div class="imageBlock_kx7m">
+                <img src="https://images.pexels.com/photos/3807516/pexels-photo-3807516.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Modern Party Bus Fleet">
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="sectionBlock_mx3k" id="events">
+            <h2>Event Types We Specialize In</h2>
+            <p>Our experienced team has successfully coordinated transportation for hundreds of events across the region. We understand the unique requirements of different celebration types and have developed specialized services to meet those needs.</p>
+
+            <h3>Nightlife & Entertainment Tours</h3>
+            <p>Experience the city's best venues with our guided nightlife tours. Our drivers know the hottest spots and can help coordinate your evening itinerary. We provide safe, reliable transportation so you can focus on having fun without worrying about driving.</p>
+
+            <h3>Casino Trips & Gaming Events</h3>
+            <p>Travel to your favorite gaming destination in comfort and style. Our party buses are perfect for group casino trips, offering entertainment during the journey and reliable transportation to and from the venue.</p>
+
+            <h3>Sports Events & Tailgating</h3>
+            <p>Tailgate like never before with our specialized sports event transportation. Whether you're heading to a football game, concert, or sporting event, we provide the perfect platform for pre-event celebrations.</p>
+
+            <h3>Wine Tours & Culinary Experiences</h3>
+            <p>Explore local wineries and restaurants with our wine tour packages. Our drivers are familiar with popular wine regions and can coordinate multi-stop itineraries for your group.</p>
+
+            <h3>Festival & Concert Transportation</h3>
+            <p>Get to your favorite festivals and concerts safely and conveniently. We handle parking logistics and provide reliable pickup and drop-off services, allowing you to enjoy the event without transportation stress.</p>
+
+            <div class="imageBlock_kx7m">
+                <img src="https://images.pexels.com/photos/3807514/pexels-photo-3807514.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Group Celebration in Party Bus">
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="sectionBlock_mx3k" id="experience">
+            <h2>Why Choose ConnectoxHome Party Bus Rentals</h2>
+            <p>With over 15 years of experience in the transportation industry, ConnectoxHome has established itself as a trusted provider of party bus rental services. Our commitment to excellence, safety, and customer satisfaction sets us apart from competitors.</p>
+
+            <h3>Professional & Courteous Staff</h3>
+            <p>Our drivers and support staff are extensively trained in customer service, safety protocols, and event coordination. Each team member is background-checked and certified to ensure the highest standards of professionalism.</p>
+
+            <h3>Safety First Approach</h3>
+            <p>Safety is our top priority. All vehicles are equipped with modern safety features, and our drivers follow strict safety protocols. We maintain comprehensive insurance coverage and adhere to all local transportation regulations.</p>
+
+            <h3>Flexible Scheduling Options</h3>
+            <p>We understand that events don't always follow standard schedules. Our flexible booking system allows for custom pickup times, extended rental periods, and multi-stop itineraries tailored to your specific needs.</p>
+
+            <h3>Transparent Pricing & No Hidden Fees</h3>
+            <p>We believe in honest, straightforward pricing. Our quotes are comprehensive and include all applicable fees, so you know exactly what to expect.</p>
+
+            <h3>24/7 Customer Support</h3>
+            <p>Our dedicated customer service team is available around the clock to answer questions, make changes to your reservation, or address any concerns that may arise.</p>
+
+            <div class="highlightBox_mx3k">
+                <strong>Customer Testimonial:</strong> "ConnectoxHome made our event unforgettable. The driver was professional, the vehicle was immaculate, and the entire experience exceeded our expectations." - Sarah M.
+            </div>
+        </section>
+
+        <!-- Business History -->
+        <section class="sectionBlock_mx3k">
+            <h2>Our Journey & Company History</h2>
+            <p>ConnectoxHome Party Bus Rentals was founded with a simple mission: to provide exceptional transportation experiences that enhance celebrations and create lasting memories. Our journey has been marked by continuous growth, innovation, and an unwavering commitment to customer satisfaction.</p>
+
+            <div class="historyTimeline_mx3k">
+                <div class="timelineItem_kx7m">
+                    <strong>2008 - The Beginning</strong>
+                    <p>ConnectoxHome was established with a single party bus and a vision to revolutionize group transportation. Our founder, recognizing a gap in the market for reliable, fun party bus services, launched the company with a focus on customer-centric service.</p>
+                </div>
+
+                <div class="timelineItem_kx7m">
+                    <strong>2010 - First Expansion</strong>
+                    <p>Due to overwhelming demand, we expanded our fleet to five vehicles and hired our first dedicated support staff. This period marked our transition from a startup to an established service provider.</p>
+                </div>
+
+                <div class="timelineItem_kx7m">
+                    <strong>2013 - Technology Integration</strong>
+                    <p>We invested in advanced booking systems and GPS tracking technology, allowing customers to monitor their vehicles in real-time and providing enhanced safety and accountability.</p>
+                </div>
+
+                <div class="timelineItem_kx7m">
+                    <strong>2015 - Regional Recognition</strong>
+                    <p>ConnectoxHome received multiple industry awards for customer service excellence and safety standards. Our reputation as a trusted provider continued to grow throughout the region.</p>
+                </div>
+
+                <div class="timelineItem_kx7m">
+                    <strong>2017 - Fleet Modernization</strong>
+                    <p>We completely modernized our fleet with state-of-the-art vehicles featuring the latest entertainment and safety technologies. This investment demonstrated our commitment to providing cutting-edge services.</p>
+                </div>
+
+                <div class="timelineItem_kx7m">
+                    <strong>2019 - Sustainability Initiatives</strong>
+                    <p>ConnectoxHome began implementing eco-friendly practices, including fuel-efficient vehicles and carbon offset programs, reflecting our commitment to environmental responsibility.</p>
+                </div>
+
+                <div class="timelineItem_kx7m">
+                    <strong>2021 - Digital Transformation</strong>
+                    <p>We launched our mobile app, allowing customers to book, track, and manage their reservations seamlessly. This digital transformation improved accessibility and customer convenience.</p>
+                </div>
+
+                <div class="timelineItem_kx7m">
+                    <strong>2023 - Present Day</strong>
+                    <p>Today, ConnectoxHome operates a fleet of 25+ vehicles and serves thousands of customers annually. We continue to innovate and expand our services while maintaining the core values that built our reputation.</p>
+                </div>
+            </div>
+
+            <h3>Our Mission & Values</h3>
+            <p>Our mission is to provide safe, reliable, and enjoyable transportation experiences that enhance celebrations and create lasting memories for our customers. We are committed to:</p>
+            <ul class="featureList_qp9n">
+                <li>Delivering exceptional customer service at every touchpoint</li>
+                <li>Maintaining the highest safety and quality standards</li>
+                <li>Continuously innovating and improving our services</li>
+                <li>Supporting our local community through charitable initiatives</li>
+                <li>Treating our employees as valued team members</li>
+                <li>Operating with integrity and transparency</li>
+            </ul>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="sectionBlock_mx3k" id="reviews">
+            <h2>Customer Reviews & Testimonials</h2>
+            <p>Don't just take our word for it - hear what our satisfied customers have to say about their experiences with ConnectoxHome Party Bus Rentals.</p>
+
+            <div class="reviewCard_qp9n">
+                <div class="stars_kx7m">★★★★★</div>
+                <strong>Michael Johnson</strong> - Birthday Celebration
+                <p>"Absolutely fantastic service! The driver was professional and courteous, and the party bus was exactly what we needed for my 30th birthday. The sound system was incredible, and all my friends had an amazing time. Highly recommended!"</p>
+            </div>
+
+            <div class="reviewCard_qp9n">
+                <div class="stars_kx7m">★★★★★</div>
+                <strong>Jennifer & David</strong> - Wedding Party Transportation
+                <p>"ConnectoxHome made our wedding day transportation seamless and stress-free. The vehicle was immaculate, the driver was punctual and professional, and our wedding party felt special and celebrated. Thank you for making our day perfect!"</p>
+            </div>
+
+            <div class="reviewCard_qp9n">
+                <div class="stars_kx7m">★★★★☆</div>
+                <strong>Robert Chen</strong> - Corporate Event
+                <p>"Great experience with ConnectoxHome for our company outing. The bus was comfortable, the driver knew the area well, and the entire team had a fantastic time. Will definitely book again for future events."</p>
+            </div>
+
+            <div class="reviewCard_qp9n">
+                <div class="stars_kx7m">★★★★★</div>
+                <strong>Amanda Rodriguez</strong> - Bachelorette Party
+                <p>"Our bachelorette party was unforgettable thanks to ConnectoxHome! The party bus was perfect, the lighting and sound system were amazing, and the driver was so helpful in coordinating our stops. Best decision ever!"</p>
+            </div>
+
+            <div class="reviewCard_qp9n">
+                <div class="stars_kx7m">★★★★★</div>
+                <strong>Thomas Williams</strong> - Casino Trip
+                <p>"Booked ConnectoxHome for a casino trip with friends, and it was perfect. The ride was smooth, the vehicle was clean and well-maintained, and the driver was friendly and professional. Definitely booking again!"</p>
+            </div>
+
+            <div class="reviewCard_qp9n">
+                <div class="stars_kx7m">★★★★★</div>
+                <strong>Lisa Patterson</strong> - Prom Night
+                <p>"My daughter and her friends had the time of their lives on prom night thanks to ConnectoxHome. The party bus made them feel special, and we appreciated the professional and safe service. Highly recommend!"</p>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="sectionBlock_mx3k" id="booking" id="bookingSection_mx3k">
+            <h2>Book Your Party Bus Today</h2>
+            <p>Ready to make your event unforgettable? Booking with ConnectoxHome is easy and convenient. Our streamlined booking process ensures that you can reserve your perfect party bus in just a few minutes. <a href="#contact" class="ctaLink_qp9n">Click here to continue</a> to our contact information for personalized assistance.</p>
+
+            <h3>Booking Process</h3>
+            <ol style="margin-left: 20px; margin-bottom: 20px;">
+                <li style="margin-bottom: 10px;"><strong>Select Your Event Date:</strong> Choose the date and time that works best for your celebration.</li>
+                <li style="margin-bottom: 10px;"><strong>Choose Your Vehicle:</strong> Browse our fleet options and select the party bus that best fits your group size and preferences.</li>
+                <li style="margin-bottom: 10px;"><strong>Customize Your Experience:</strong> Add any special requests or amenities you'd like included in your rental.</li>
+                <li style="margin-bottom: 10px;"><strong>Confirm Your Reservation:</strong> Review all details and complete your booking through our secure system.</li>
+                <li style="margin-bottom: 10px;"><strong>Enjoy Your Event:</strong> Our professional driver will arrive on time and ensure you have an amazing experience.</li>
+            </ol>
+
+            <h3>What to Expect</h3>
+            <p>When you book with ConnectoxHome, you can expect:</p>
+            <ul class="featureList_qp9n">
+                <li>Prompt confirmation of your reservation</li>
+                <li>Professional driver briefing before your event</li>
+                <li>Clean, well-maintained vehicle</li>
+                <li>Reliable transportation and on-time service</li>
+                <li>Professional and courteous staff</li>
+                <li>24/7 support throughout your rental period</li>
+            </ul>
+
+            <div class="highlightBox_mx3k">
+                <strong>Early Booking Discount:</strong> Book your event 30 days in advance and receive special pricing. <a href="#contact" class="ctaLink_qp9n">Click here to continue</a> with your inquiry.
+            </div>
+        </section>
+
+        <!-- Additional Services Section -->
+        <section class="sectionBlock_mx3k">
+            <h2>Additional Services & Customization Options</h2>
+            <p>ConnectoxHome goes beyond basic transportation. We offer a range of additional services and customization options to make your event truly special.</p>
+
+            <h3>Entertainment Packages</h3>
+            <p>Enhance your party bus experience with our entertainment packages. Options include premium sound system upgrades, DJ services coordination, karaoke systems, and interactive lighting displays that respond to music.</p>
+
+            <h3>Catering Coordination</h3>
+            <p>We can coordinate with local caterers to provide food and beverage services during your rental. Our team will work with you to ensure that refreshments are available and properly served throughout your event.</p>
+
+            <h3>Multi-Stop Itineraries</h3>
+            <p>Planning to visit multiple venues? We specialize in coordinating multi-stop itineraries, handling parking logistics, and ensuring smooth transitions between locations.</p>
+
+            <h3>Photography & Videography</h3>
+            <p>We can coordinate with professional photographers and videographers to capture your event. Our vehicles provide unique backdrops for memorable photos and videos.</p>
+
+            <h3>Themed Decorations</h3>
+            <p>Make your party bus match your event theme with our decoration services. From elegant floral arrangements to festive balloon installations, we can customize the interior to reflect your vision.</p>
+
+            <h3>VIP Concierge Services</h3>
+            <p>Our VIP concierge team can assist with restaurant reservations, venue recommendations, and event planning coordination to ensure every detail of your celebration is perfect.</p>
+
+            <div class="imageBlock_kx7m">
+                <img src="https://images.pexels.com/photos/3807515/pexels-photo-3807515.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Party Bus Entertainment Features">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="sectionBlock_mx3k" id="contact">
+            <h2>Get In Touch With Us</h2>
+            <p>Have questions about our services or ready to book your party bus? Our friendly team is here to help. Contact us today for more information or to reserve your event transportation.</p>
+
+            <h3>Contact Information</h3>
+            <p><strong>Phone:</strong> <a href="tel:+14155551234" class="phoneLink_kx7m">+1 (415) 555-1234</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@connectoxhome.com" style="color: #667eea; text-decoration: none;">info@connectoxhome.com</a></p>
+            <p><strong>Address:</strong> 2847 Transportation Boulevard, San Francisco, CA 94107</p>
+            <p><strong>Hours:</strong> Monday - Sunday, 8:00 AM - 11:00 PM</p>
+
+            <h3>Quick Response Team</h3>
+            <p>Our dedicated booking team responds to inquiries within 2 hours during business hours. For urgent requests, call our emergency line at <a href="tel:+14155559876" class="phoneLink_kx7m">+1 (415) 555-9876</a>.</p>
+
+            <div class="highlightBox_mx3k">
+                <strong>Special Request:</strong> Need same-day booking? Contact our emergency coordination team. We often have availability for last-minute events. <a href="tel:+14155559876" class="phoneLink_kx7m">Click here to continue</a> calling now.
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="sectionBlock_mx3k">
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>What is the minimum rental period?</h3>
+            <p>Our standard minimum rental period is 3 hours. However, we offer flexible options for shorter or longer rentals based on availability and your specific needs.</p>
+
+            <h3>Can I customize the music and entertainment?</h3>
+            <p>Absolutely! You can bring your own music, request specific playlists, or coordinate with our DJ partners for a fully customized entertainment experience.</p>
+
+            <h3>Are your drivers trained in safety protocols?</h3>
+            <p>Yes, all our drivers are extensively trained in safety protocols, defensive driving techniques, and emergency procedures. They are also certified and background-checked.</p>
+
+            <h3>What happens if I need to cancel or reschedule?</h3>
+            <p>We offer flexible cancellation and rescheduling policies. Contact our team as soon as possible to discuss your options. Specific terms depend on your booking agreement.</p>
+
+            <h3>Do you provide transportation for out-of-town events?</h3>
+            <p>Yes, we offer transportation services for events throughout the region and beyond. Contact us to discuss your specific destination and requirements.</p>
+
+            <h3>Is parking included in the rental?</h3>
+            <p>Parking arrangements depend on your specific itinerary. Our team will coordinate parking logistics and ensure smooth transitions between venues.</p>
+
+            <h3>Can you accommodate dietary restrictions for catering?</h3>
+            <p>Yes, we work with caterers who can accommodate various dietary restrictions and preferences. Inform us of any special requirements during the booking process.</p>
+
+            <h3>What if there's an emergency during my rental?</h3>
+            <p>Our drivers are trained to handle emergencies and have direct communication with our dispatch center. We maintain comprehensive insurance coverage and follow strict safety protocols.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer_qp9n">
+        <div class="footerContent_kx7m">
+            <div class="footerSection_mx3k">
+                <h4>ConnectoxHome Party Bus</h4>
+                <p>Your trusted partner for exceptional group transportation and celebration services.</p>
+                <p><strong>Main Office:</strong><br>2847 Transportation Boulevard<br>San Francisco, CA 94107</p>
+            </div>
+
+            <div class="footerSection_mx3k">
+                <h4>Quick Links</h4>
+                <p><a href="#services">Our Services</a></p>
+                <p><a href="#fleet">Fleet Information</a></p>
+                <p><a href="#events">Event Types</a></p>
+                <p><a href="#booking">Book Now</a></p>
+                <p><a href="#reviews">Customer Reviews</a></p>
+            </div>
+
+            <div class="footerSection_mx3k">
+                <h4>Contact Us</h4>
+                <p><strong>Phone:</strong> <a href="tel:+14155551234" class="phoneLink_kx7m">+1 (415) 555-1234</a></p>
+                <p><strong>Emergency:</strong> <a href="tel:+14155559876" class="phoneLink_kx7m">+1 (415) 555-9876</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@connectoxhome.com">info@connectoxhome.com</a></p>
+                <p><strong>Hours:</strong> 8 AM - 11 PM Daily</p>
+            </div>
+
+            <div class="footerSection_mx3k">
+                <h4>Legal</h4>
+                <p><a href="#" onclick="openModal('termsModal_kx7m')">Terms of Service</a></p>
+                <p><a href="#" onclick="openModal('privacyModal_kx7m')">Privacy Policy</a></p>
+                <p><a href="#">Accessibility Statement</a></p>
+                <p><a href="#">Safety Information</a></p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p>&copy; 2024 ConnectoxHome Party Bus Rentals. All rights reserved. | Serving the San Francisco Bay Area and Beyond</p>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal_kx7m" class="modal_kx7m">
+        <div class="modalContent_kx7m">
+            <span class="closeButton_kx7m" onclick="closeModal('privacyModal_kx7m')">&times;</span>
+            <h2>Privacy Policy</h2>
+            
+            <h3>1. Introduction</h3>
+            <p>ConnectoxHome Party Bus Rentals ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.</p>
+
+            <h3>2. Information We Collect</h3>
+            <p>We may collect information about you in a variety of ways. The information we may collect on the site includes:</p>
+            <ul class="featureList_qp9n">
+                <li>Personal identification information (name, email address, phone number, address)</li>
+                <li>Booking and reservation details</li>
+                <li>Payment information (processed securely through third-party providers)</li>
+                <li>Communication preferences</li>
+                <li>Device information and usage data</li>
+            </ul>
+
+            <h3>3. Use of Your Information</h3>
+            <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the site to:</p>
+            <ul class="featureList_qp9n">
+                <li>Process your bookings and reservations</li>
+                <li>Send periodic emails regarding your order or other products and services</li>
+                <li>Follow up with you after your rental experience</li>
+                <li>Generate analytics about site usage</li>
+                <li>Improve our website and services</li>
+                <li>Respond to your inquiries and customer service requests</li>
+            </ul>
+
+            <h3>4. Disclosure of Your Information</h3>
+            <p>We may share your information with third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information.</p>
+
+            <h3>5. Security of Your Information</h3>
+            <p>We implement a variety of security measures to maintain the safety of your personal information. Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems.</p>
+
+            <h3>6. Contact Us</h3>
+            <p>If you have questions or concerns regarding this Privacy Policy, please contact us at <a href="mailto:privacy@connectoxhome.com">privacy@connectoxhome.com</a> or call <a href="tel:+14155551234">+1 (415) 555-1234</a>.</p>
+
+            <p><strong>Last Updated:</strong> January 2024</p>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="termsModal_kx7m" class="modal_kx7m">
+        <div class="modalContent_kx7m">
+            <span class="closeButton_kx7m" onclick="closeModal('termsModal_kx7m')">&times;</span>
+            <h2>Terms of Service</h2>
+
+            <h3>1. Agreement to Terms</h3>
+            <p>By accessing and using the ConnectoxHome Party Bus Rentals website and services, you accept and agree to be bound by and abide by the terms and conditions of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+
+            <h3>2. Use License</h3>
+            <p>Permission is granted to temporarily download one copy of the materials (information or software) on ConnectoxHome's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+            <ul class="featureList_qp9n">
+                <li>Modify or copy the materials</li>
+                <li>Use the materials for any commercial purpose or for any public display</li>
+                <li>Attempt to decompile or reverse engineer any software contained on the website</li>
+                <li>Remove any copyright or other proprietary notations from the materials</li>
+                <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
+            </ul>
+
+            <h3>3. Booking and Reservation Terms</h3>
+            <p>All bookings are subject to availability and confirmation by ConnectoxHome. A deposit or full payment may be required to secure your reservation. Cancellations must be made according to our cancellation policy, which will be provided at the time of booking.</p>
+
+            <h3>4. Liability Limitations</h3>
+            <p>In no event shall ConnectoxHome or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on ConnectoxHome's website, even if we or our authorized representative has been notified orally or in writing of the possibility of such damage.</p>
+
+            <h3>5. Accuracy of Materials</h3>
+            <p>The materials appearing on ConnectoxHome's website could include technical, typographical, or photographic errors. ConnectoxHome does not warrant that any of the materials on its website are accurate, complete, or current. ConnectoxHome may make changes to the materials contained on its website at any time without notice.</p>
+
+            <h3>6. Materials and Content</h3>
+            <p>The materials on ConnectoxHome's website are provided on an 'as is' basis. ConnectoxHome makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+
+            <h3>7. Limitations</h3>
+            <p>In no event shall ConnectoxHome or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on ConnectoxHome's website.</p>
+
+            <h3>8. Accuracy of Information</h3>
+            <p>You agree that all information provided during the booking process is accurate and truthful. Providing false information may result in cancellation of your reservation without refund.</p>
+
+            <h3>9. Conduct During Rental</h3>
+            <p>Customers agree to conduct themselves in a respectful and lawful manner during their rental. ConnectoxHome reserves the right to refuse service or terminate a rental if customers engage in illegal activity, excessive intoxication, or behavior that endangers other passengers or property.</p>
+
+            <h3>10. Modifications to Terms</h3>
+            <p>ConnectoxHome may revise these terms of service for its website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.</p>
+
+            <h3>11. Governing Law</h3>
+            <p>These terms and conditions are governed by and construed in accordance with the laws of California, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+
+            <h3>12. Contact Information</h3>
+            <p>If you have any questions about these Terms of Service, please contact us at <a href="mailto:legal@connectoxhome.com">legal@connectoxhome.com</a> or call <a href="tel:+14155551234">+1 (415) 555-1234</a>.</p>
+
+            <p><strong>Last Updated:</strong> January 2024</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal_kx7m')) {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && !href.includes('onclick')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
